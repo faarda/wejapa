@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wejapa - Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="wj-dashboard">
+        <div class="wj-dashboard__header">
+            <div class="wj-dashboard__logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M39.562 13.8603L30.1611 21.727L20.7603 12.8614L9.97692 21.9767L5.27649 17.4815L21.0368 3.99576L30.4376 12.9862L35.2763 8.99047L39.9768 13.4857L39.562 13.8603Z"
+                            fill="#FED430"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.1749 16.982L35.2762 30.4677L24.9076 39.3333L20.3454 34.9629L25.3224 30.7174L20.2072 25.7227L15.3685 21.1026L20.6219 16.6074L21.1749 16.982ZM17.4422 28.2201L4.86163 38.8338L0.0229492 34.2137L13.0183 23.1005L17.857 27.7206L17.4422 28.2201Z"
+                            fill="#1DBF69"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M30.4376 0C31.82 0 32.926 0.499471 33.7555 1.37354C34.585 2.12275 34.9997 3.12169 34.9997 4.37037C34.8615 5.49418 34.3085 6.49312 33.479 7.24233C32.6495 7.99153 31.4053 8.36614 30.1611 8.36614C28.9168 8.36614 27.6726 7.7418 26.9813 6.99259C26.1519 6.24339 25.5989 5.11958 25.7371 3.99577C25.7371 2.87196 26.2901 1.87302 27.1196 1.12381C28.0873 0.374603 29.1933 0 30.4376 0Z"
+                            fill="white"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="40" height="39.3333" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <input type="checkbox" name="wj-mobile-nav__checkbox" id="wj-mobile-nav__checkbox">
+
+            <label for="wj-mobile-nav__checkbox" class="wj-mobile-nav__label">
+                <div class="wj-mobile-nav__toggle"></div>
+            </label>
+            <nav class="wj-dashboard__nav">
+                <ul class="wj-dashboard__nav-items">
+                    <li class="wj-dashboard__nav-item">
+                        <a href="" class="wj-dashboard__nav-link active">
+                            <span data-feather="briefcase"></span>
+                            Jobs
+                        </a>
+                    </li>
+                    <li class="wj-dashboard__nav-item">
+                        <a href="" class="wj-dashboard__nav-link">
+                            <span data-feather="file-text"></span>
+                            Applications
+                        </a>
+                    </li>
+                    <li class="wj-dashboard__nav-item">
+                        <a href="" class="wj-dashboard__nav-link">
+                            <span data-feather="save"></span>
+                            Saved Jobs
+                        </a>
+                    </li>
+                    <li class="wj-dashboard__nav-item">
+                        <div class="wj-dropdown__wrapper">
+                            <a href="#" class="wj-dashboard__nav-link wj-dashboard__nav__user wj-dropdown__toggle"
+                                data-dropdown="user">
+                                <div class="user-icon">
+                                    <span data-feather="user"></span>
+                                </div>
+                                Silas
+                                <span data-feather="chevron-down" class="caret"></span>
+                            </a>
+                            <div class="wj-dropdown" id="dropdown-user">
+                                <ul class="wj-dropdown__list">
+                                    <li class="wj-dropdown__item">
+                                        <a href="" class="link"><span data-feather="user"></span> My
+                                            profile</a>
+                                    </li>
+                                    <li class="wj-dropdown__divider"></li>
+                                    <li class="wj-dropdown__item">
+                                        <a href="" class="link"><span data-feather="log-out"></span> Log
+                                            out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wj-dashboard__body wj-single-job">
+            <div class="wj-job-icon">
+                <span data-feather="briefcase"></span>
+            </div>
+            <h2 class="page-title">Fullstack Developer</h2>
+            <div class="wj-job__location">Kigali, Rwanda</div>
+            <div class="wj-job__status wj-job__status--open">Open</div>
+
+            <div class="wj-job__benefits">
+                <div class="wj-job__benefit">
+                    <div class="wj-job__benefit__icon">
+                        <span data-feather="clock"></span>
+                    </div>
+
+                    <div class="wj-job__benefit-text">
+                        23hr/wk
+                    </div>
+                </div>
+                <div class="wj-job__benefit">
+                    <div class="wj-job__benefit__icon">
+                        <span data-feather="target"></span>
+                    </div>
+
+                    <div class="wj-job__benefit-text">
+                        Freelance
+                    </div>
+                </div>
+                <div class="wj-job__benefit">
+                    <div class="wj-job__benefit__icon">
+                        <span data-feather="dollar-sign"></span>
+                    </div>
+
+                    <div class="wj-job__benefit-text">
+                        $600
+                    </div>
+                </div>
+            </div>
+
+            <div class="wj-job__details">
+                <h6 class="wj-job__detail-title">Description</h6>
+                <div class="wj-job__detail">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit excepturi ad natus aliquam ducimus
+                    adipisci similique ex facilis quis nostrum.
+                </div>
+                <h6 class="wj-job__detail-title">Benefits</h6>
+                <div class="wj-job__detail">
+                    <ul class="wj-job__benefits-list">
+                        <li class="wj-job__benefits-item">
+                            Flexible Schedule
+                        </li>
+                        <li class="wj-job__benefits-item">
+                            Flexible Schedule
+                        </li>
+                    </ul>
+                </div>
+                <h6 class="wj-job__detail-title">Benefits</h6>
+                <div class="wj-job__detail">
+                    <ul class="wj-job__benefits-list">
+                        <li class="wj-job__benefits-item">
+                            Flexible Schedule
+                        </li>
+                        <li class="wj-job__benefits-item">
+                            Flexible Schedule
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="wj-btn wj-btn--primary">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script/japa.js"></script>
+    <script>
+        feather.replace()
+        let japa = new Japa();
+    </script>
+</body>
+
+</html>

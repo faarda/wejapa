@@ -1,0 +1,51 @@
+h4{
+    color: $dark;
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+    @include sm{
+        font-size: 1.7rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &.link {
+        position: relative;
+        z-index: 10;
+        // display: inline-block;
+        color: $primary;
+
+        display: inline-flex;
+        align-items: center;
+        font-weight: 600;
+
+        &::before {
+            content: "";
+            transition: all .3s;
+            position: absolute;
+            background: $accent;
+            width: 0;
+            height: 100%;
+            right: -5px;
+            z-index: -1;
+        }
+
+        &:hover {
+            &::before {
+                width: 20px;
+            }
+        }
+    }
+
+    .feather{
+        margin-right: .3rem;
+    }
+}
+
+.feather{
+    height: 1.6rem;
+    width: 1.6rem;
+}

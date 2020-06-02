@@ -1,0 +1,101 @@
+//AUTH STYLES
+.wj-auth {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 2.5rem;
+    column-gap: 2.5rem;
+    overflow: auto;
+
+    @include md {
+        grid-template-columns: 100%;
+        height: 100%;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+
+    @include sm {
+        grid-template-columns: 100%;
+        height: 100%;
+        padding: 1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+
+    &__left {
+        color: $light;
+        background: url('https://www.wejapa.com/assets/images/svg/map.svg'), $dark;
+        height: 100%;
+        border-radius: 2rem;
+        background-position: 50% 50%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5rem;
+        box-shadow: 0 3px 25px rgba(0, 0, 0, .07);
+
+        &__actions {
+            margin-top: 5rem;
+
+            a {
+                margin: .5rem;
+            }
+        }
+
+        @include sm {
+            display: none;
+        }
+
+        @include md {
+            display: none;
+        }
+    }
+
+
+    &__main {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        justify-content: center;
+        justify-items: center;
+        // align-items: center;
+        // align-content: center;
+        // height: 100%;
+        // padding-top: 3rem;
+        // padding-bottom: 10rem;
+    }
+
+    &__logo {
+        background-color: $dark;
+        padding: 1.4rem;
+        border-radius: 50%;
+        height: 6rem;
+        width: 6rem;
+        text-align: center;
+        @include flex;
+        justify-content: center;
+        margin: 1.5rem auto;
+
+        svg {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__form {
+        max-width: 60rem;
+        width: 100%;
+
+        &--login{
+            max-width: 45rem;
+        }
+    }
+
+}

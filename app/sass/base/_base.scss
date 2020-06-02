@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    color: $grey;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+ul{
+    list-style: none;
+}
+
+.mt-3{
+    margin-top: 2rem !important;
+}
+
+
+.spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin .7s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+.nothing{
+    padding:2rem 1.5rem;
+    background: $light;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+}

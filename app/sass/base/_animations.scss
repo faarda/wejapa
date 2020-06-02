@@ -1,0 +1,50 @@
+.animate__animated.animate__delay-1s {
+    animation-delay: 1s;
+}
+
+
+.animate__animated.animate__delay-2s {
+    animation-delay: 1.2s;
+}
+
+.animate__animated.animate__delay-3s {
+    animation-delay: 1.6s;
+}
+
+.animate__animated.animate__delay-4s {
+    animation-delay: 2s;
+}
+
+.animate__animated.animate__delay-5s {
+    animation-delay: 2.4s;
+}
+
+.animate__animated.animate__delay-6s {
+    animation-delay: 2.8s;
+}
+
+.animate__animated.animate__delay-7s {
+    animation-delay: 3.2s;
+}
+
+@keyframes slide-down {
+    0% {
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+        opacity: 0;
+    }
+
+    // 50%{
+    //     height: 500px;
+    //     opacity: .5;
+    //     overflow: hidden;
+    // }
+
+    100% {
+        overflow: unset;
+        height: auto;
+        padding: 5rem 2rem;
+        opacity: 1;
+    }
+}

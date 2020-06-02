@@ -1,0 +1,45 @@
+.wj-btn{
+    outline: none;
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    display: block;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: none;
+    transition: .2s ease all;
+
+    &--inline{
+        width: auto;
+        display: inline-block;
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+        touch-action: none;
+        pointer-events: none;
+
+        &.wj-btn--primary{
+            background-color: lighten($primary, 20);
+        }
+
+                &.wj-btn--ascent {
+                    background-color: lighten($accent, 20);
+                }
+    }
+
+    &:hover{
+        box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    }
+
+    &--ascent{
+        background-color: $accent;
+    }
+
+        &--primary {
+            background-color: $primary;
+            color: $light;
+        }
+}

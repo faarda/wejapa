@@ -1,0 +1,39 @@
+.wj-dashboard {
+    padding: $lg-padding;
+    margin-top: 7rem;
+    position: relative;
+
+    &::before{
+        content: "";
+        height: 7rem;
+        width: 100%;
+        background: #fff;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 10;
+    }
+
+    @include sm {
+        padding: $sm-padding;
+    }
+
+    @include md {
+        padding: $md-padding;
+    }
+
+    &__body{
+        // margin-top: 3rem;
+        width: 90%;
+        max-width: 100rem;
+        margin: 3rem auto;
+
+        .page-title{
+            font-size: 1.8rem;
+
+            @include not-sm{
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "designs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass app/sass/main.scss app/styles/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faarda/wejapa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faarda/wejapa/issues"
+  },
+  "homepage": "https://github.com/faarda/wejapa#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

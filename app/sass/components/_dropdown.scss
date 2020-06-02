@@ -1,0 +1,42 @@
+.wj-dropdown {
+    &__toggle {
+        cursor: pointer;
+    }
+
+    background: white;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    padding: 1.5rem;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    border-radius: .8rem;
+    z-index: 15000;
+    display: none;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__item:not(:first-child) {
+        padding-top: 1rem;
+    }
+
+    &__divider {
+        height: 1px;
+        width: calc(100% + 3rem);
+        margin: 1rem -1.5rem 0 -1.5rem;
+        background: $light;
+    }
+
+    &--active {
+        display: block;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+}
