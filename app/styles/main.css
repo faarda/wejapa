@@ -45,6 +45,16 @@ ul {
   border-radius: 1rem;
   margin: 1.5rem 0; }
 
+.d-flex {
+  display: flex;
+  align-items: center; }
+
+.justify-end {
+  justify-content: flex-end !important; }
+
+.justify-between {
+  justify-content: space-between !important; }
+
 h4 {
   color: #041705;
   font-size: 1.8rem;
@@ -598,6 +608,64 @@ a {
     width: 100%; }
     .wj-auth__form--login {
       max-width: 45rem; }
+
+.pass-request {
+  background: #F8F8F8;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center; }
+  .pass-request svg {
+    height: 5.6rem;
+    width: 5.6rem;
+    margin-right: 1rem; }
+  .pass-request__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #041705;
+    text-align: left;
+    margin-bottom: .5rem; }
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  stroke: #1dbf69;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 3;
+  stroke: #1dbf69;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #1dbf69;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none; }
+  50% {
+    transform: scale3d(1.1, 1.1, 1); } }
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px transparent; } }
 
 .wj-dashboard {
   padding: 3.5rem;

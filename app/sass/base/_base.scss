@@ -58,3 +58,15 @@ ul{
     border-radius: 1rem;
     margin: 1.5rem 0;
 }
+
+.d-flex{
+    @include flex;
+}
+
+.justify-end{
+    justify-content: flex-end !important;
+}
+
+.justify-between{
+    justify-content:space-between !important;
+}
