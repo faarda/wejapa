@@ -113,7 +113,7 @@ a {
   animation-delay: 2.1s; }
 
 .animate__animated.animate__slow {
-  animation-duration: 1s; }
+  animation-duration: .5s; }
 
 @keyframes slide-down {
   0% {
