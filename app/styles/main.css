@@ -92,25 +92,28 @@ a {
   width: 1.6rem; }
 
 .animate__animated.animate__delay-1s {
-  animation-delay: 1s; }
+  animation-delay: .3s; }
 
 .animate__animated.animate__delay-2s {
-  animation-delay: 1.2s; }
+  animation-delay: .6s; }
 
 .animate__animated.animate__delay-3s {
-  animation-delay: 1.6s; }
+  animation-delay: .9s; }
 
 .animate__animated.animate__delay-4s {
-  animation-delay: 2s; }
+  animation-delay: 1.2s; }
 
 .animate__animated.animate__delay-5s {
-  animation-delay: 2.4s; }
+  animation-delay: 1.5s; }
 
 .animate__animated.animate__delay-6s {
-  animation-delay: 2.8s; }
+  animation-delay: 1.8s; }
 
 .animate__animated.animate__delay-7s {
-  animation-delay: 3.2s; }
+  animation-delay: 2.1s; }
+
+.animate__animated.animate__slow {
+  animation-duration: 1s; }
 
 @keyframes slide-down {
   0% {
@@ -735,7 +738,7 @@ a {
       .wj-single-job .wj-job__benefit {
         padding: 2rem 1rem; } }
     .wj-single-job .wj-job__benefit__icon {
-      color: #fed430; }
+      color: #1dbf69; }
       .wj-single-job .wj-job__benefit__icon .feather {
         width: 2.2rem;
         height: 2.2rem;

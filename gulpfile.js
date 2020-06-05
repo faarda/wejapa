@@ -10,7 +10,7 @@ function buildSass() {
         .pipe(sass({
             outputStyle: 'compressed'
         }).on('error', sass.logError))
-        .pipe(gulp.dest("../frontend/public/css"));
+        .pipe(gulp.dest("../WebApp/public/css"));
 }
 
 
