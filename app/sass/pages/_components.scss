@@ -24,6 +24,7 @@
         background: $light;
         margin: 1rem;
         min-width: 25rem;
+        border: solid 2px #fff;
     }
     
     code{
@@ -35,4 +36,12 @@
         display: inline-block;
         border-radius: .5rem;
     }
+}
+
+.grid-class{
+    height: 7rem;
+    padding:  1.5rem;
+    border-radius: 1rem;
+    background: $light;
+    border: solid 2px #fff;
 }
