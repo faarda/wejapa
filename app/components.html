@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wejapa - Components</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="wj-components">
+    <h1 class="wj-components__heading">WeJapa components</h1>
+
+    <h4 class="mt-3">Alerts</h4>
+    <div class="wj-components__item">
+        <div class="wj-alert wj-alert--success m-1">
+            This is a success alert!
+        </div>
+        <div class="wj-alert wj-alert--error m-1">
+            This is an error alert!
+        </div>
+        <div class="wj-alert wj-alert--neutral m-1">
+            This is a neutral alert!
+        </div>
+    </div>
+    <h4 class="mt-3">Badges</h4>
+    <div class="wj-components__item">
+        <div class="wj-badge wj-badge--success m-1">
+            Done
+        </div>
+        <div class="wj-badge wj-badge--error m-1">
+            Error
+        </div>
+        <div class="wj-badge wj-badge--neutral m-1">
+            Ok
+        </div>
+    </div>
+
+    <h4 class="mt-3">Flex =<code>d-flex</code></h4>
+    <div class="wj-components__item">
+        <div>
+            <code>align-center</code>
+            <div class="d-flex wj-components__card align-center"><p>This text is centered vertically</p></div>
+        </div>
+        <div>
+            <code>align-start</code>
+            <div class="d-flex wj-components__card align-start">This text is aligned to the top</div>
+        </div>
+        <div>
+            <code>align-end</code>
+            <div class="d-flex wj-components__card align-end">This text is aligned to the bottom</div>
+        </div>
+        <div>
+            <code>align-sretch</code>
+            <div class="d-flex wj-components__card align-end">Stretched!</div>
+        </div>
+
+        <div>
+            <code>justify-center</code>
+            <div class="d-flex wj-components__card justify-center">
+                <p>Text 1</p>
+                <p>Text 2</p>
+            </div>
+        </div>
+        <div>
+            <code>justify-end</code>
+            <div class="d-flex wj-components__card justify-end">
+                <p>Text 1</p>
+                <p>Text 2</p>
+            </div>
+        </div>
+        <div>
+            <code>justify-start</code>
+            <div class="d-flex wj-components__card justify-start">
+                <p>Text 1</p>
+                <p>Text 2</p>
+            </div>
+        </div>
+        <div>
+            <code>justify-between</code>
+            <div class="d-flex wj-components__card justify-between">
+                <p>Text 1</p>
+                <p>Text 2</p>
+            </div>
+        </div>
+        <div>
+            <code>justify-around</code>
+            <div class="d-flex wj-components__card justify-around">
+                <p>Text 1</p>
+                <p>Text 2</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h4 class="mt-3">Buttons =<code>wj-btn</code> buttons are set to block by default</h4>
+    <div class="wj-components__item">
+        <div class="m-1">
+            <code>wj-btn--primary</code>
+            <button class="wj-btn wj-btn--primary">Primary Button</button>
+        </div>
+        <div class="m-1">
+            <code>wj-btn--ascent</code>
+            <button class="wj-btn wj-btn--ascent">Ascent Button</button>
+        </div>
+        <div class="m-1">
+            <code>wj-btn--error</code>
+            <button class="wj-btn wj-btn--error">Error Button</button>
+        </div>
+        <div class="m-1">
+            <code>wj-btn--sm</code>
+            <button class="wj-btn wj-btn--primary wj-btn--sm">Small Button</button>
+        </div>
+        <div class="m-1">
+            <code>wj-btn--inline</code>
+            <button class="wj-btn wj-btn--error wj-btn--inline">Inline Button</button>
+        </div>
+        <div class="m-1">
+            <code>add disabled</code>
+            <button class="wj-btn wj-btn--ascent" disabled>Disabled Button</button>
+        </div>
+    </div>
+
+    <h4 class="mt-3">Card =<code>wj-card</code></h4>
+    <div class="wj-card m-1">
+        <div class="wj-card__header d-flex">
+            <h3 class="wj-card__heading">This is a card header</h3> <code>wj-card__header</code>
+        </div>
+        <div class="wj-card__body">
+            <code>wj-card__body</code>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, dolorem? Ab alias quas facere dicta odit ea in quo! Nam officia, atque ut iusto aperiam, autem doloribus nostrum repudiandae reprehenderit ducimus delectus maiores! Ratione in officia facere eius qui dolorum reprehenderit sapiente placeat nemo obcaecati aut eveniet velit dolore cum suscipit sint dignissimos, magni natus iste! Odit dignissimos nihil maiores, nemo omnis repellendus laboriosam! Repellat recusandae quas accusamus quam enim quae laudantium ipsum inventore ducimus dignissimos odit molestias consectetur eaque modi nulla alias voluptas est deserunt beatae earum blanditiis cumque, quod eos. Laborum, totam at esse est voluptatum perspiciatis incidunt!
+        </div>
+        <div class="wj-card__footer d-flex">
+            <p>Card Footer</p> <code>wj-card__footer</code>
+        </div>
+    </div>
+
+    <h4 class="mt-3">Form Error = <small>Just add </small><code>has-error</code> <small> to </small> <code>wj-form__group</code></h4>
+    <form action="" class="wj-form">
+        <div class="wj-form__group wj-group--full-width has-error">
+            <input type="email" name="" placeholder="Enter Email" id="" class="wj-form__input">
+            <span class="wj-form__error-text">Email address is invalid</span>
+        </div>
+    </form>
+
+    <h4 class="mt-3">Table =<code>wj-card</code><code>wj-card--table</code><code>wj-table</code></h4>
+    <div class="wj-card m-1">
+        <div class="wj-card__header d-flex">
+            <h3 class="wj-card__heading">This is a table</h3> 
+        </div>
+        <div class="wj-card--table">
+            <table class="wj-table">
+                <thead class="wj-table__head">
+                    <tr>
+                        <th scope="col">Project</th>
+                        <th scope="col">Budget</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="wj-table__body">
+                    <tr class="wj-table__row">
+                        <th scope="row">
+                            Lorem, ipsum.
+                        </th>
+                        <td>
+                            Lorem ipsum dolor sit amet.
+                        </td>
+                        <td>
+                            Lorem, ipsum.
+                        </td>
+                    </tr>
+                    <tr class="wj-table__row">
+                        <th scope="row">
+                            Lorem, ipsum.
+                        </th>
+                        <td>
+                            Lorem ipsum dolor sit amet.
+                        </td>
+                        <td>
+                            Lorem, ipsum.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>

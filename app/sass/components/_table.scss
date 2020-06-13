@@ -1,0 +1,49 @@
+.wj-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+    &__head{
+        th{
+            background-color: $light;
+            color: $grey;
+            border-color: #e9ecef;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #e9ecef;
+            font-weight: 500;
+        }
+    }
+
+    th, td{
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    td{
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+
+    tr{
+        font-weight: normal;
+        font-size: 1.4rem;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $light;
+        }
+
+        th{
+            font-weight: normal;
+        }
+    }
+}
+
+.wj-card--table{
+    overflow-x: auto;
+}

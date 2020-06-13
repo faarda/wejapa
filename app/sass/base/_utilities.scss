@@ -1,0 +1,98 @@
+// FLEX CLASSES
+.d-flex{
+    @include flex;
+}
+
+.justify-end{
+    justify-content: flex-end !important;
+}
+
+.justify-between{
+    justify-content:space-between !important;
+}
+
+.justify-center{
+    justify-content: center !important;
+}
+
+.justify-around{
+    justify-content: space-around !important;
+}
+
+.justify-start{
+    justify-content: flex-start !important;
+}
+
+
+.align-center{
+    align-items: center !important;
+}
+
+.align-end{
+    align-items: flex-end !important;
+}
+
+.align-start{
+    align-items: flex-start !important;
+}
+
+.align-stretch{
+    align-items: stretch !important;
+}
+
+.flex-column{
+    flex-direction: column !important;
+}
+
+.flex-row{
+    flex-direction: row !important;
+}
+
+// SIZING
+.mt-3{
+    margin-top: 2rem !important;
+}
+
+.m-1{
+    margin: 1rem !important;
+}
+
+.m-2{
+    margin: 2rem !important;
+}
+
+.m-3{
+    margin: 3rem !important;
+}
+
+.mt-1{
+    margin-top: 1rem !important;
+}
+
+.mt-2{
+    margin-top: 2rem !important;
+}
+
+.mt-3{
+    margin-top: 3rem !important;
+}
+
+.mt-5{
+    margin-top: 5rem !important;
+}
+
+.mt-10{
+    margin-top: 10rem !important;
+}
+
+.p-1{
+    padding: 1rem !important;
+}
+
+.p-2{
+    padding: 2rem !important;
+}
+
+.p-3{
+    padding: 3rem;
+}

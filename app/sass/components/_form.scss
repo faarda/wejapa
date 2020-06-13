@@ -25,18 +25,27 @@
             // }
         }
 
-        &--error {
-            // border-color: $red;
-            margin-bottom: 1.5rem;
+        &.has-error{
+            .wj-form__input{
+                border-color: $error;
+            }
+
+            .wj-form__error-text{
+                display: block;
+            }
         }
 
     }
 
     &__error-text {
         font-size: 1.2rem;
-        // color: $red;
-        // display: none;
+        color: $error;
+        display: none;
+        margin-top: .5rem;
+        // justify-self: left;
+        margin-right: auto;
     }
+
 
     &__input {
         width: 100%;
@@ -65,6 +74,10 @@
             }
         }
 
+    }
+
+    select.wj-form__input{
+        -webkit-appearance: none;
     }
 
     // textarea.bb-form__input {

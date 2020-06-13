@@ -23,10 +23,6 @@ ul{
     list-style: none;
 }
 
-.mt-3{
-    margin-top: 2rem !important;
-}
-
 
 .spinner {
     display: inline-block;
@@ -66,14 +62,3 @@ ul{
     margin: 1.5rem 0;
 }
 
-.d-flex{
-    @include flex;
-}
-
-.justify-end{
-    justify-content: flex-end !important;
-}
-
-.justify-between{
-    justify-content:space-between !important;
-}

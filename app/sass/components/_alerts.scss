@@ -1,0 +1,22 @@
+.wj-alert{
+    padding: 2rem 1.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 45rem;
+    border-radius: 1rem;
+
+    &--success{
+        background: rgba($color: $primary, $alpha: .12);
+        color: $primary;
+    }
+
+    &--error{
+        background: rgba($color: $error, $alpha: .12);
+        color: $error;
+    }
+
+    &--neutral{
+        background: $light;
+        color: $grey;
+    }
+}

@@ -28,6 +28,10 @@
                 &.wj-btn--ascent {
                     background-color: lighten($accent, 20);
                 }
+
+                &.wj-btn--error {
+                    background-color: lighten($error, 20);
+                }
     }
 
     &:hover{
@@ -38,8 +42,19 @@
         background-color: $accent;
     }
 
-        &--primary {
-            background-color: $primary;
-            color: $light;
-        }
+    &--primary {
+        background-color: $primary;
+        color: $light;
+    }
+
+    &--error {
+        background-color: $error;
+        color: $light;
+    }
+
+    &--sm{
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: .7rem;
+    }
 }

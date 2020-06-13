@@ -1,0 +1,23 @@
+.wj-badge{
+    font-size: 1.1rem;
+    padding: .2rem .8rem;
+    border-radius: .5rem;
+    display: inline-flex;
+    align-items: center;
+
+
+    &--success {
+        color: $primary;
+        background-color: rgba($color: $primary, $alpha: .2);
+    }
+
+    &--error {
+        color: $error;
+        background-color: rgba($color: $error, $alpha: .2);
+    }
+
+    &--neutral {
+        color: $grey;
+        background-color: $light;
+    }
+}

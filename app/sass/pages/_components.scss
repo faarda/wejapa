@@ -1,0 +1,38 @@
+.wj-components{
+    padding: 3rem 2rem;
+
+    &__heading{
+        color: $dark;
+    }
+
+    &__item{
+        @include flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+
+    h4{
+        color: $grey;
+        font-weight: 400;
+    }
+
+    &__card{
+        height: 7rem;
+        padding:  1.5rem;
+        border-radius: 1rem;
+        background: $light;
+        margin: 1rem;
+        min-width: 25rem;
+    }
+    
+    code{
+        padding: 1rem;
+        background: $grey-dark;
+        color: $grey-light;
+        font-size: 1.2rem;
+        margin: .5rem 1rem;
+        display: inline-block;
+        border-radius: .5rem;
+    }
+}
