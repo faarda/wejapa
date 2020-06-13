@@ -1,0 +1,75 @@
+.wj-modal {
+    background: $light;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+
+    width: 90vw;
+    height: 90%;
+
+    @include not-sm {
+        width: 55vw;
+        height: 90vh;
+        min-width: 60rem;
+    }
+
+    &--sm {
+        width: 80vw;
+        height: 40%;
+
+        @include not-sm {
+            width: 35vw;
+            min-width: 35rem;
+        }
+    }
+
+
+    &__overlay {
+        background: rgba(#001f3f, 0.7);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+        transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        &.show-modal{
+            display: flex;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        display: inline-block;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        font-size: 20px;
+        color: $grey;
+    }
+
+    &__body {
+        height: 100%;
+        overflow: auto;
+        width: 100%;
+        padding: 2rem;
+        padding-bottom: 10rem;
+    }
+
+    &__header {
+        border-bottom: 1px solid $grey-light;
+        padding: 1.5rem 2rem;
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        color: $grey-dark;
+        font-weight: normal;
+    }
+
+}

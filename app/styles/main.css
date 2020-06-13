@@ -740,6 +740,62 @@ a {
   .wj-mobile-nav__toggle::after {
     top: 7px; }
 
+.wj-modal {
+  background: #F8F8F8;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 90vw;
+  height: 90%; }
+  @media screen and (min-width: 601px) {
+    .wj-modal {
+      width: 55vw;
+      height: 90vh;
+      min-width: 60rem; } }
+  .wj-modal--sm {
+    width: 80vw;
+    height: 40%; }
+    @media screen and (min-width: 601px) {
+      .wj-modal--sm {
+        width: 35vw;
+        min-width: 35rem; } }
+  .wj-modal__overlay {
+    background: rgba(0, 31, 63, 0.7);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+    align-items: center;
+    justify-content: center;
+    display: flex; }
+    .wj-modal__overlay.show-modal {
+      display: flex; }
+  .wj-modal__close {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888; }
+  .wj-modal__body {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 10rem; }
+  .wj-modal__header {
+    border-bottom: 1px solid #F3F3F3;
+    padding: 1.5rem 2rem; }
+  .wj-modal__heading {
+    font-size: 1.8rem;
+    color: #4d4d4d;
+    font-weight: normal; }
+
 .wj-dropdown {
   background: white;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
