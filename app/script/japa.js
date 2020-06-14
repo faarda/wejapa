@@ -4,14 +4,14 @@ class Japa {
             this.closeDropdowns();
             this.openDropdowns();
             this.watchSearch();
+            this.watchModal();
             // console.log("Im here bitch");
         });
     }
 
 
     openDropdowns() {
-        const dropdownToggles = document.querySelectorAll('.wj-dropdown__toggle');
-        // console.log(dropdownToggles);    
+        const dropdownToggles = document.querySelectorAll('[data-dropdown]');
 
         for (const toggle of dropdownToggles) {
             toggle.addEventListener('click', e => {
@@ -69,6 +69,77 @@ class Japa {
                 searchInput.closest('.wj-search').classList.remove('active');
             });
         }
+    }
+
+    watchModal() {
+        let modalToggles = document.querySelectorAll('[data-modal]');
+        let modalOverlays = document.querySelectorAll('.wj-modal__overlay');
+        let modalCloseButtons = document.querySelectorAll('.wj-modal--close');
+
+
+        modalToggles.forEach(el => {
+            el.addEventListener('click', e => {
+                e.preventDefault();
+                let modalId = el.dataset.modal;
+
+                this.showModal(modalId);
+
+            });
+        })
+
+        modalOverlays.forEach(el => {
+            el.addEventListener('click', e => {
+                if (e.target == e.currentTarget) {
+                    let modalId = e.target.id;
+                    this.closeModal(modalId);
+                } else {
+                    return;
+                }
+            });
+        });
+
+        modalCloseButtons.forEach(el => {
+            el.addEventListener('click', e => {
+                let modalId = e.target.closest('.wj-modal__overlay').id;
+                console.log(modalId);
+                this.closeModal(modalId);
+            });
+        });
+
+    }
+
+    showModal(modal) {
+        let modalId = this.getModalId(modal);
+
+        document.querySelector(modalId).classList.add('show-modal');
+    }
+
+    closeModal(modal) {
+        let modalId = this.getModalId(modal);
+
+        document.querySelector(modalId).classList.remove('show-modal');
+    }
+
+    closeModals() {
+        let modals = document.querySelectorAll('.wj-modal__overlay');
+
+        modals.forEach(el => {
+            let modalId = el.id;
+
+            this.closeModal(modalId);
+        });
+    }
+
+    getModalId(modal) {
+        let modalId;
+
+        if (modal.includes("modal-")) {
+            modalId = "#" + modal;
+        } else {
+            modalId = "#modal-" + modal;
+        }
+
+        return modalId;
     }
 
 }

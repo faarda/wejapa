@@ -1,11 +1,8 @@
 .wj-dropdown {
-    &__toggle {
-        cursor: pointer;
-    }
-
     background: white;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
-    min-width: 200px;
+    min-width: 20rem;
+    max-width: 50rem;
     padding: 1.5rem;
     position: absolute;
     top: 120%;
@@ -13,6 +10,11 @@
     border-radius: .8rem;
     z-index: 15000;
     display: none;
+
+    &--left{
+        left: 0;
+        right: auto;
+    }
 
     &__list {
         list-style: none;
@@ -38,5 +40,10 @@
 
     &__wrapper {
         position: relative;
+        // display: inline-block;
     }
+}
+
+[data-dropdown] {
+    cursor: pointer;
 }

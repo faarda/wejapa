@@ -4,23 +4,26 @@
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     width: 90vw;
-    height: 90%;
+    max-height: 90%;
 
     @include not-sm {
         width: 55vw;
-        height: 90vh;
+        max-height: 90vh;
         min-width: 60rem;
     }
 
     &--sm {
         width: 80vw;
-        height: 40%;
+        max-height: 40%;
 
         @include not-sm {
             width: 35vw;
             min-width: 35rem;
+            max-height: 40%;
         }
     }
 
@@ -36,7 +39,7 @@
         transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1) all;
         align-items: center;
         justify-content: center;
-        display: flex;
+        display: none;
         
         &.show-modal{
             display: flex;
@@ -49,20 +52,33 @@
         right: 15px;
         top: 15px;
         cursor: pointer;
-        font-size: 20px;
+        // font-size: 20px;
         color: $grey;
+        padding: .5rem;
+        border-radius: 50%;
+
+        .feather{
+            height: 2rem;
+            width: 2rem;
+        }
     }
 
     &__body {
-        height: 100%;
+        // height: 100%;
+        flex: 1;
         overflow: auto;
         width: 100%;
         padding: 2rem;
-        padding-bottom: 10rem;
+        padding-bottom: 3rem;
     }
 
     &__header {
         border-bottom: 1px solid $grey-light;
+        padding: 1.5rem 2rem;
+    }
+
+    &__footer {
+        border-top: 1px solid $grey-light;
         padding: 1.5rem 2rem;
     }
 

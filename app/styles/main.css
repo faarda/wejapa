@@ -363,11 +363,47 @@ a {
 .flex-row {
   flex-direction: row !important; }
 
+.d-flex--inline {
+  display: inline-flex; }
+
+.d-block {
+  display: block; }
+
+.d-inline {
+  display: inline; }
+
+.d-inline-block {
+  display: inline-block; }
+
 .grid {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 1rem auto; }
+  .grid-1 {
+    width: 8.33%; }
+  .grid-2 {
+    width: 16.66%; }
+  .grid-3 {
+    width: 25%; }
+  .grid-4 {
+    width: 33.33%; }
+  .grid-5 {
+    width: 41.66%; }
+  .grid-6 {
+    width: 50%; }
+  .grid-7 {
+    width: 58.33%; }
+  .grid-8 {
+    width: 66.66%; }
+  .grid-9 {
+    width: 75%; }
+  .grid-10 {
+    width: 83.33%; }
+  .grid-11 {
+    width: 91.66%; }
+  .grid-12 {
+    width: 100%; }
   @media screen and (max-width: 600px) {
     .grid-sm-1 {
       width: 8.33%; }
@@ -393,30 +429,31 @@ a {
       width: 91.66%; }
     .grid-sm-12 {
       width: 100%; } }
-  .grid-1 {
-    width: 8.33%; }
-  .grid-2 {
-    width: 16.66%; }
-  .grid-3 {
-    width: 25%; }
-  .grid-4 {
-    width: 33.33%; }
-  .grid-5 {
-    width: 41.66%; }
-  .grid-6 {
-    width: 50%; }
-  .grid-7 {
-    width: 58.33%; }
-  .grid-8 {
-    width: 66.66%; }
-  .grid-9 {
-    width: 75%; }
-  .grid-10 {
-    width: 83.33%; }
-  .grid-11 {
-    width: 91.66%; }
-  .grid-12 {
-    width: 100%; }
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .grid-md-1 {
+      width: 8.33%; }
+    .grid-md-2 {
+      width: 16.66%; }
+    .grid-md-3 {
+      width: 25%; }
+    .grid-md-4 {
+      width: 33.33%; }
+    .grid-md-5 {
+      width: 41.66%; }
+    .grid-md-6 {
+      width: 50%; }
+    .grid-md-7 {
+      width: 58.33%; }
+    .grid-md-8 {
+      width: 66.66%; }
+    .grid-md-9 {
+      width: 75%; }
+    .grid-md-10 {
+      width: 83.33%; }
+    .grid-md-11 {
+      width: 91.66%; }
+    .grid-md-12 {
+      width: 100%; } }
 
 .wj-btn {
   outline: none;
@@ -429,7 +466,8 @@ a {
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: none;
-  transition: .2s ease all; }
+  transition: .2s ease all;
+  text-transform: capitalize; }
   .wj-btn--inline {
     width: auto;
     display: inline-block; }
@@ -457,6 +495,13 @@ a {
     padding: 1rem 1.5rem;
     font-size: 1.2rem;
     border-radius: .7rem; }
+  .wj-btn--icon {
+    display: flex;
+    align-items: center; }
+    .wj-btn--icon .feather {
+      margin-left: .5rem;
+      height: 1.7rem;
+      width: 1.7rem; }
 
 .wj-form {
   margin: 0 auto;
@@ -746,20 +791,23 @@ a {
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   width: 90vw;
-  height: 90%; }
+  max-height: 90%; }
   @media screen and (min-width: 601px) {
     .wj-modal {
       width: 55vw;
-      height: 90vh;
+      max-height: 90vh;
       min-width: 60rem; } }
   .wj-modal--sm {
     width: 80vw;
-    height: 40%; }
+    max-height: 40%; }
     @media screen and (min-width: 601px) {
       .wj-modal--sm {
         width: 35vw;
-        min-width: 35rem; } }
+        min-width: 35rem;
+        max-height: 40%; } }
   .wj-modal__overlay {
     background: rgba(0, 31, 63, 0.7);
     position: fixed;
@@ -771,7 +819,7 @@ a {
     transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1) all;
     align-items: center;
     justify-content: center;
-    display: flex; }
+    display: none; }
     .wj-modal__overlay.show-modal {
       display: flex; }
   .wj-modal__close {
@@ -780,16 +828,23 @@ a {
     right: 15px;
     top: 15px;
     cursor: pointer;
-    font-size: 20px;
-    color: #888; }
+    color: #888;
+    padding: .5rem;
+    border-radius: 50%; }
+    .wj-modal__close .feather {
+      height: 2rem;
+      width: 2rem; }
   .wj-modal__body {
-    height: 100%;
+    flex: 1;
     overflow: auto;
     width: 100%;
     padding: 2rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 3rem; }
   .wj-modal__header {
     border-bottom: 1px solid #F3F3F3;
+    padding: 1.5rem 2rem; }
+  .wj-modal__footer {
+    border-top: 1px solid #F3F3F3;
     padding: 1.5rem 2rem; }
   .wj-modal__heading {
     font-size: 1.8rem;
@@ -799,7 +854,8 @@ a {
 .wj-dropdown {
   background: white;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
+  min-width: 20rem;
+  max-width: 50rem;
   padding: 1.5rem;
   position: absolute;
   top: 120%;
@@ -807,8 +863,9 @@ a {
   border-radius: .8rem;
   z-index: 15000;
   display: none; }
-  .wj-dropdown__toggle {
-    cursor: pointer; }
+  .wj-dropdown--left {
+    left: 0;
+    right: auto; }
   .wj-dropdown__list {
     list-style: none;
     display: flex;
@@ -825,6 +882,9 @@ a {
     display: block; }
   .wj-dropdown__wrapper {
     position: relative; }
+
+[data-dropdown] {
+  cursor: pointer; }
 
 .wj-jobs {
   width: 100%;

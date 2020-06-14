@@ -10,6 +10,7 @@
     cursor: pointer;
     box-shadow: none;
     transition: .2s ease all;
+    text-transform: capitalize;
 
     &--inline{
         width: auto;
@@ -56,5 +57,19 @@
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
         border-radius: .7rem;
+    }
+
+    &--icon{
+        @include flex;
+
+        // &:last-child{
+        //     margin-left: .5rem;
+        // }
+
+        .feather{
+            margin-left: .5rem;
+            height: 1.7rem;
+            width: 1.7rem;
+        }
     }
 }
