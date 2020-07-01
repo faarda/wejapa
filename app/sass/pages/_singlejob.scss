@@ -61,7 +61,7 @@
         }
     }
 
-    .wj-job__details{
+    .wj-job__details:not(.details){
         width: 100%;
         max-width: 60rem;
         text-align: left;

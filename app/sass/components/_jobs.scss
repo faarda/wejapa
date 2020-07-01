@@ -18,6 +18,7 @@
         justify-content: space-between;
         cursor: pointer;
         transition: .3s ease-in-out all;
+        max-width: 40rem;
 
         &:hover {
             border-color: transparent;
